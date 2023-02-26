@@ -8,6 +8,7 @@ sed -i 's/pokaz/cout' .tmpCOMPILE 2> temp.log
 sed -i 's/zrobic/<</g' .tmpCOMPILE 2> temp.log
 sed -i 's/koncowka czlonka/endl/g' .tmpCOMPILE 2> temp.log
 sed -i 's/pokaz_dupe obcokrajowcowi i wyslac w cipke kurwa na czubek/return 0/g' .tmpCOMPILE 2> temp.log
+sed -i 's/o_kurwa/return 1/g' .tmpCOMPILE 2> temp.log
 sed -i 's/trzeba/std/g' .tmpCOMPILE 2> temp.log
 sed -i 's/pokaz/cout/g' .tmpCOMPILE 2> temp.log
 done
