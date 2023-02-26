@@ -1,0 +1,19 @@
+cp -r $1 .tmpCOMPILE
+for ((i = 0 ; i < 10 ; i++)); do
+sed -i 's/podlacz/#include/g' .tmpCOMPILE 2> temp.log
+sed -i 's/standardowa biblioteke wejscia wyjsciowego/<iostream>/g' .tmpCOMPILE 2> temp.log
+sed -i 's/rodzaj liczba/int/g' .tmpCOMPILE 2> temp.log
+sed -i 's/glowny/main/g' .tmpCOMPILE 2> temp.log
+sed -i 's/pokaz/cout' .tmpCOMPILE 2> temp.log
+sed -i 's/zrobic/<</g' .tmpCOMPILE 2> temp.log
+sed -i 's/koncowka czlonka/endl/g' .tmpCOMPILE 2> temp.log
+sed -i 's/pokaz_dupe obcokrajowcowi i wyslac w cipke kurwa na czubek/return 0/g' .tmpCOMPILE 2> temp.log
+sed -i 's/trzeba/std/g' .tmpCOMPILE 2> temp.log
+sed -i 's/pokaz/cout/g' .tmpCOMPILE 2> temp.log
+done
+mv .tmpCOMPILE .tmpcom.cpp
+g++ .tmpcom.cpp -o .tmpcomfin
+./.tmpcomfin
+rm -rf .tmpconfin
+rm -rf .tmp*
+rm -rf temp.log
