@@ -11,6 +11,9 @@ sed -i 's/pokaz_dupe obcokrajowcowi i wyslac w cipke kurwa na czubek/return 0/g'
 sed -i 's/o_kurwa/return 1/g' .tmpCOMPILE 2> temp.log
 sed -i 's/trzeba/std/g' .tmpCOMPILE 2> temp.log
 sed -i 's/pokaz/cout/g' .tmpCOMPILE 2> temp.log
+sed -i 's/jesli/if/g' .tmpCOMPILE 2> temp.log
+sed -i 's/inaczei/else/g' .tmpCOMPILE 2> temp.log
+sed -i 's/zlamac/break/g' .tmpCOMPILE 2> temp.log
 done
 mv .tmpCOMPILE .tmpcom.cpp
 g++ .tmpcom.cpp -o .tmpcomfin
